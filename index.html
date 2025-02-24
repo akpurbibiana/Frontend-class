@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to Html</title>
+    <style>
+        *{
+            padding: 0px;
+            /* paddingtop:0px;paddingbuttom:0px;paddingRight:0px;paddingLeft:0px;*/
+            margin: 0px;
+            }
+            .main_container{
+                height: 100vh;
+                background-color: rgb(40, 40, 39);
+            }
+            .header_container{
+                height: 10vh;
+                width: 100%;
+                background-color: black; 
+                border-radius: 25px;
+            }
+            .header_inner_container{
+                background-color: rgba(119, 117, 116, 0.726);
+                padding: 0px 36px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 25px;
+}
+            .header_logo{
+                width: 50px;
+                height: 40px;
+                border-radius: 10px;
+}
+.logo{
+    width: 50px;
+    height: 40px;
+}
+.header_button{
+    padding: 8px 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    margin: 0px 4px;
+}
+.header_button:hover{
+    background-color: black;
+    color: white;
+    transition-timing-function: ease;
+    transition: background-color 2s;
+}
+#content_container{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+   background-image: url(./assets/bg1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+    </style>
 </head>
 <body>
-    <div>
+    <div class="main_container">
         <!-- header -->
-        <div>
+        <div class="header_container">
+            <div class="header_inner_container">
             <!-- Logo -->
-            <h2>HTML Inc.</h2>
+            <div class="header_logo">
+                <img src="./assets/logo.png" class="logo"/>
+            </div>
             <!-- navigations -->
             <div>
-                <button>About us</button>
-                <button>Contact us</button>
-                <button>Home</button>
+                <button class="header_button">About us</button>
+                <button class="header_button">Contact us</button>
+                <button class="header_button">Home</button>
+            </div>
             </div>
             <!-- content -->
+             <div id="content_container">
+                <img class="content_image"/>
+             </div>
         </div>
-        <img src="./assets/bg.jpg" width="600" height="500"/>
-        <button>Click me!</button>
         <div></div>
         <!-- Footer -->
+         <footer>
+            <h4>Copyright Bibiana 2024</h4>
+         </footer>
         <div>
-            <footer>
-                <p>Copyright 2024 Bibiana</p>
-            </footer>
         </div>
     </div>
-    <!-- <h1>Welcome to my first coding class!!</h1> 
-    <h2>Hello World</h2>
-    <h3>Hello World</h3>
-    <h4>Hello World</h4>
-    <h5>Hello World</h5>
-    <h6>Hello World</h6>-->
 
 </body>
 </html>
